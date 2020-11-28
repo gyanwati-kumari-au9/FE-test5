@@ -1,7 +1,7 @@
 import React from 'react';
 import './header.css';
 
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import {Nav, Navbar} from 'react-bootstrap'
 
@@ -12,8 +12,8 @@ const Header = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
-                <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#contact">Contact-us</Nav.Link>
+                <Link  to="/" style={{fontSize:"25px",color: "white",fontWeight:"bold",textDecoration:"none",marginRight:"20px",marginLeft:"100px"}}>Home</Link>
+                <Link  to="/contact-us" style={{fontSize:"25px",color: "white",fontWeight:"bold",textDecoration:"none"}}>Contact-us</Link>
             </Nav>
         </Navbar.Collapse>
         </Navbar>
