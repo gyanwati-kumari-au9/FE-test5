@@ -18,7 +18,27 @@ class ContactForm extends React.Component {
     //   this.handleSubmit = this.handleSubmit.bind(this);
     }
   
-   
+    handleSubmit(e) {
+        e.preventDefault();
+        if (this.state.email === 'admin' && this.state.mssg.length > 50){
+          alert('Welcome Admin, you have successfully submitted in');
+          console.log('state',this.state);
+          return;
+        }
+        if(this.state.email !== 'admin'){
+          alert('Invalid Email, try again')
+          return;
+        }
+       if (this.state.mssg.length <= 50){
+          alert('Message should be greater than 50 character');
+          console.log('state',this.state);
+          return;
+  
+        }
+        
+        console.log('state',this.state);
+      }
+
     render() {
       return (
         <div className="container-fluid">
