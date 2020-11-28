@@ -48,6 +48,15 @@ const Section = () => {
                 <li style={{color: "orange",marginLeft:"75px"}}>interest</li>
                 <p style={{marginLeft:"75px"}}>UI development , Watching Movie,playing game </p>
             </div>
+            <div>
+                <h3 style={{backgroundColor: "steelblue",color: "white",padding:"10px",marginTop:"20px"}}>Projects</h3>
+                <li style={{color: "orange",marginLeft:"75px"}}>Python-Project:-</li>
+                <p style={{marginLeft:"95px"}}>Swiggy(Food Delivery System).</p>
+                <li style={{color: "orange",marginLeft:"75px"}}>Frontend-Project(Swiggy-Food delivery system)</li>
+                <p style={{marginLeft:"95px"}}>Using HTML,CSS,JS</p>
+                <li style={{color: "orange",marginLeft:"75px"}}>Frontend-Project(Portfolio)</li>
+                <p style={{marginLeft:"95px"}}>Using React </p>
+            </div>
            
         </div>
         
